@@ -5,7 +5,7 @@ pipeline{
   }
   // triggers {}
   // options {}
-  stages {
+  stages{
     stage('1.PullSCM'){
       steps{
               sh "echo SCM about to be pulled from github"
@@ -13,7 +13,7 @@ pipeline{
               sh "Build Successful!"
     }
   }
-/*
+  /*
   stage('2.Build'){
     steps{
     sh 
