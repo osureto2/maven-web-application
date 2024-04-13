@@ -8,11 +8,17 @@ pipeline{
   stages {
     stage('1.PullSCM'){
       steps{
-              sh " echo SCM about to be pulled from github "
-              git " 
+              sh "echo SCM about to be pulled from github"
+              git "https://github.com/osureto2/maven-web-application.git"
+              sh "Build Successful!"
+    }
   }
+/*
+  stage('2.Build'){
+    steps{
+    sh 
+    }
   }
-  stage('2.Build'){}
   stage('3.CodeQualityAnalysis'){}
   stage('4.Upload'){}
   stage('5.Deployment'){}
@@ -22,4 +28,5 @@ pipeline{
   success{}
   always{}
   }
+*/
 }
