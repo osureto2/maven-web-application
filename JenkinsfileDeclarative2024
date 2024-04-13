@@ -1,10 +1,10 @@
 pipeline{
   agents any
   tools {
-    mavenHome = "maven"
+    maven  "maven"
   }
   // triggers {}
-  options {}
+  // options {}
   stages {
     stage('1.PullSCM'){
       steps{
