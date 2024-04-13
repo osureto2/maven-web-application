@@ -6,8 +6,11 @@ pipeline{
   // triggers {}
   options {}
   stages {
-  stage('1.PullSCM'){
-  sh " echo "
+    stage('1.PullSCM'){
+      steps{
+              sh " echo SCM about to be pulled from github "
+              git " 
+  }
   }
   stage('2.Build'){}
   stage('3.CodeQualityAnalysis'){}
