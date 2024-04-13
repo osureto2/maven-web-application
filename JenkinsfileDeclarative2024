@@ -27,6 +27,6 @@ pipeline{
   failure{}
   success{}
   always{}
-  }
+   }
 */
 }
