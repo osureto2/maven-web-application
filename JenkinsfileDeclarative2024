@@ -5,6 +5,18 @@ pipeline{
   }
   // triggers {}
   options {}
-  stages {}
-  post {}
+  stages {
+  stage('1.PullSCM'){
+  sh " echo "
+  }
+  stage('2.Build'){}
+  stage('3.CodeQualityAnalysis'){}
+  stage('4.Upload'){}
+  stage('5.Deployment'){}
+  }
+  post {
+  failure{}
+  success{}
+  always{}
+  }
 }
