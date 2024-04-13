@@ -1,0 +1,10 @@
+pipeline{
+  agents any
+  tools {
+    mavenHome = "maven"
+  }
+  // triggers {}
+  options {}
+  stages {}
+  post {}
+}
